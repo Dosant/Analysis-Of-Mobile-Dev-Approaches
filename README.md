@@ -10,5 +10,5 @@ Repo includes:
 * Maps Ionic App
 
 Video of Perf Comparison:
-	* [List](https://vimeo.com/167622123) 
-	* [Maps](https://vimeo.com/167622675)
+* [List](https://vimeo.com/167622123) 
+* [Maps](https://vimeo.com/167622675)
