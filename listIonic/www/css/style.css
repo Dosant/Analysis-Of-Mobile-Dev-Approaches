@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+
+.item.full-height-item  h2{
+
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+}
+
+.item.full-height-item  p{
+
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+}
+
+.item-animate-in.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+
+.item-animate-in.ng-enter-stagger{
+    -webkit-animation-delay:200ms;
+  animation-delay:200ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}

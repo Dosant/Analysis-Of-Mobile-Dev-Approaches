@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h7A-eH-9hH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eav-Y6-TP0">
+            <objects>
+                <navigationController id="h7A-eH-9hH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LtP-Q9-y1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pOd-9p-TPG" kind="relationship" relationship="rootViewController" id="5ri-KB-MQB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yb1-89-8gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="582"/>
+        </scene>
+        <!--Maps iOS-->
+        <scene sceneID="nEP-Nm-IAm">
+            <objects>
+                <viewController id="pOd-9p-TPG" customClass="ViewController" customModule="mapsios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DAZ-lo-NGB"/>
+                        <viewControllerLayoutGuide type="bottom" id="AKS-9D-OAi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nNh-OF-DPI" customClass="GMSMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maps iOS" id="Pb1-Be-KeN">
+                        <barButtonItem key="rightBarButtonItem" title="Go To Work" id="Z2Q-Q3-uS0">
+                            <connections>
+                                <action selector="goToWorkAction:" destination="pOd-9p-TPG" id="EhP-dQ-7Bg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="nNh-OF-DPI" id="8qV-Or-Vkn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opk-8a-OUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="582"/>
+        </scene>
+    </scenes>
+</document>
