@@ -9,3 +9,6 @@ Repo includes:
 * Maps iOS App
 * Maps Ionic App
 
+Video of Perf Comparison:
+	* [List](https://vimeo.com/167622123) 
+	* [Maps](https://vimeo.com/167622675)
